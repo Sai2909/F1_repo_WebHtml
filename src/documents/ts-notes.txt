@@ -1,0 +1,124 @@
+Array:
+
+
+**Declaring array in ts:
+-you can use var, let or const.
+-array uses the data type with meta character [] .which specifies a range of values.(min to max)
+
+let arrayName:string[];
+-"any" type can handle various types of values.
+let arrayName:any[];
+-array can handle vaious collection of valuess then it knows as "tuple". 
+-you can initialize or assign memory for array by using meta characters []" or array constractor"Array()".
+
+**initilizing:
+let values:string[]=[];
+let values:string[]=new array();
+
+**assigning:
+let values:string[];    -->dcaring.
+values=[];  		-->assigning.
+values=new Araay() 	 -->assigning
+
+FAQ:WT is diff b/w [] and Array?
+Ans:
+
+**Array Manipualation
+-ts can use all js array functions to pmanipulate array.
+
+**Read elements from array:
+===========================
+toString() :it returns alla array elements seperatedwith ",".
+join()     :it returns all array elements by using a custom delimeter.
+filter()   :it uses a  conditons and returns all elements that are matching with condtion.
+find()      :similAR to filter but returns only 1st occurance value that matches the condition.
+slice()  :it can extract elemetns based on index numbers.
+
+**
+find and filter using this syntax:
+arrayName.find(function(val){
+returen val|condition:
+});
+
+** use loops and iterators
+*loop require d a condition,initilization,and counter
+for( var i=0; i<length;i++ )
+{
+}
+
+*iterator is a software design pattern used to read elements from a collection in a sequencial order.
+*it doent require explict initilizer,condition or counter.
+for..in  ->iterates throught propertys .
+for..of  ->iterates throught values
+
+
+**Add elements into array:
+==========================
+push()  :add new element(s) as last item (s), towards the end.
+unshift() : add new element(s) as first item(s)
+splice()  : add new elements at specific postion. index number start with 1.
+
+syntax :
+arrayName.splice(startIndex,deleteCount,"Newitems..,..,");
+
+**Removing elements from array:
+==============================
+pop()  :it removes and returnes the last elemets.
+shift()  :it removes and returns first element.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
