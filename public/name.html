@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload(){
+          frmRegister.frmText.value="REGISTER";
+          frmLogin.frmEmail.value="EMAIL LOGIN";
+
+        }
+
+    </script>
+</head>
+<!-- PARENT CHILD REFERENCE BY USING NAME PROPERTY -->
+<body onload="bodyload">
+    <form name="frmRegister">    <!--PARENT-->
+        <h2>REGISTER:</h2>
+        USERNAME:<input type="text" name="frmText" id="">   <!--CHILD-->
+        <button >submit</button>
+    </form>
+    <form name="frmLogin">
+        <h2>EMAIL LOGIN:</h2>
+        <input type="email" name="frmEmail">
+        <button>logged</button>
+
+
+          </form>
+
+</body>
+</html>

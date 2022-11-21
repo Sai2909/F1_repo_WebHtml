@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Text box -->
+    <h2>Form</h2>
+    <form action="get">
+        <label for="">UserName</label>
+        <input type="text" value="" name="username" readonly>
+        <input type="text" value="sai" name="username" placeholder="enter sai only"><br>
+        <input type="text" value="sai" disabled>
+        <input type="text" autofocus size="10">
+        <input type="text" minlength="4" maxlength="10" required>
+
+       
+            <input type="text" list="list items">
+            <datalist id="list items" >
+                <option value="saikiran">saikiran</option>
+                <option value="shiva">shiva</option>
+            </datalist>
+      
+
+       <h2>password</h2>
+        <input type="password" pattern="\w{0,10}" required autofocus maxlength="10"> <br>
+        <h2>Number</h2>
+        <input type="number" min="0" max="10" name="age" step="0.1" value="1"><br>
+        <h2>range</h2>
+        <input type="range" name="price" min="1000" step="1000" max="100000" value="1000"><br>
+        <h2>color</h2>
+        <input type="color" name="colors" value="color name"><br>
+        <h3>date</h3>
+        <!-- <input type="date">
+        <input type="time">
+        <input type="week">
+        <input type="year"> -->
+        <input type="datetime-local"><br>
+        <h2>file</h2>
+        <input type="file" name="photo" multiple accept=".jpg ,.gif"> <br>
+        <h2>email</h2>
+        <input type="email" name="email"><br>
+        <h2>url</h2>
+        <input type="url" name="site"><br>
+        <h2>radio button</h2>
+         <label for="">gender</label>
+         <input type="radio" name="gender"  value="male" checked>male
+         <input type="radio" name="gender" value="female"> female
+         <br>
+         <h3>check box</h3>
+         <input type="checkbox" name="technologys" list="langauges">
+         <datalist id="langauges" >
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js"> JAVASCRIPT</option>
+        </datalist>
+         
+         <br>
+         <h3>drop down</h3>
+         <select name="" id="">
+            <optgroup label="cources">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="js">js</option>
+            </optgroup>
+         </select>
+         <br>
+         <h3>fieldset with text area</h3>
+         <fieldset>
+        <legend> tell about sai kiran</legend>
+        <textarea name="saikiran" id="" cols="30" rows="10"></textarea>
+         </fieldset>
+         <br>
+         <h2>meter</h2>
+            <meter min="100" max="1000" value="100" low="100" max="1000">
+
+            </meter>
+            <br>
+            <h3>progress</h3>
+            <progress min="100" max="1000" value="100" low="100" max="1000" ></progress>
+            <br>
+            <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>

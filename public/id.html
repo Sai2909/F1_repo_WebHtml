@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload()
+        {
+            document.getElementById("submit").value="formlogin";
+            document.getElementById("loginbtn").value="Login";
+        }
+
+    </script>
+</head>
+<body onclick="bodyload">
+   <!-- YOU CAN ACCESS DIRECT THE ID  OF THE ELEMENT -->
+    <form name="frmRegister">
+        <h2>FORM LOGIN</h2>
+        usernsme:
+        <input type="text">
+        <button id="submit">submit</button>
+    </form>
+
+    <form name="frmLogin">
+        <h2>Login</h2>
+        Mobile:
+        <input type="number">
+        <button id="loginbtn">submit</button>
+        <!-- <input type="text"> -->
+       
+    </form>
+
+
+    
+</body>
+</html>

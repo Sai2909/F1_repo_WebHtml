@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload(){
+          forms= document.getElementsByName("pay");
+            alert(`how much pay mathods: ${forms.lenght}`);
+        }
+        function bodyload(){
+            forms = document.getElementsByTagName("p");
+            alert(`paragraph tags how much: ${forms.lenght}`);
+        }
+        function bodyload(){
+            forms=document.getElementsByClassName("textboxclasss");
+            alert(` how many textboxclassess in class: ${forms.lenght}`);
+        }
+
+
+    </script>
+</head>
+<body onload="bodyload()">
+   <!-- documnet.getElementByTagname(), as same as-- CLASS NAME, --NAME -->
+<h2>items</h2>
+<fieldset>
+    <legend>payment</legend>
+    <input type="radio" name="pay">cash
+    <input type="radio" name="pay"> UPI
+    <input type="radio" name="pay"> Credit Card
+    <input type="radio" name="pay"> Debit Card
+</fieldset>
+<!-- 
+<p>hi  saikiran</p>
+username:<input type="text">
+<h3>hii manachala</h3>
+<p>hii shivaorasad</p> -->
+
+<h2>forms</h2>
+username:<input type="text" class="textboxclasss">
+<button  class="buttonclasss">submit</button>
+<input type="text" class="textboxclasss">
+ email:<input type="email" class="emailclass">   
+ <input type="text" class="textboxclasss"> 
+</body>
+</html>

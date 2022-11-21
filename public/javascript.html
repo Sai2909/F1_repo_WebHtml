@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function Validate() {
+            if (document.getElementById("txtUsername").value.trim() == "") {
+                // alert("Please enter Username!");
+                document.getElementById("errUsername").innerText = 'Please enter Username';
+                let element = document.getElementById("errUsername");
+                element.style.color = 'red';
+                return false;
+            }
+
+            if (document.getElementById("txtpswd").value.trim() == "") {
+                document.getElementById("errpassword").innerText = 'Please enter password';
+                let element = document.getElementById("errpassword");
+                element.style.color = 'green';
+
+                // let element = document.getElementById("txtpswd");
+                // element.style.border = 'red';
+                //  element.focus();
+                return false;
+            }
+
+            const radiobuttonMale = document.getElementById("male");
+            const radiobuttonFemale = document.getElementById("female");
+            if ((!radiobuttonMale.checked || radiobuttonMale.value == '') && (!radiobuttonFemale.checked || radiobuttonFemale.value == '')) {
+                alert('please select gender');
+                return false;
+            }
+
+            const checkbox = document.getElementById('chkbox');
+            if (!checkbox.checked) {
+                document.getElementById("lblcheck").innerText = 'Please check checkbox';
+                let element = document.getElementById("lblcheck");
+                element.style.color = 'yellow';
+                return false;
+            }
+
+            const selectdropdown = document.getElementById("myddltest");
+            if (selectdropdown.value == 0) {
+                alert('plese select dropdown');
+                return false;
+            }
+
+            const fileUpload = document.getElementById("flupload");
+            const files = fileUpload.files;
+            if (files.length == 0) {
+                alert('uplaod file');
+                return false;
+            }
+
+            const selectdate = document.getElementById("Tdate");
+            if (selectdate.value == '') {
+                alert('please select date');
+                return false;
+            }
+
+            const selecturl = document.getElementById("URL");
+            if (selecturl.value == '') {
+                alert('plese select url');
+                return false;
+            }
+
+            const selectEMIL = document.getElementById("EMAIL");
+            if (selectEMIL.value == '') {
+                alert('plese select EMIL');
+                return false;
+            }
+
+
+        };
+    </script>
+</head>
+
+<body>
+    <table width="200" frame="box">
+        <tr>
+            <td>
+                <table id="sai">
+                    <tr>
+                        <td id="username">
+                            username:<input type="text" id="txtUsername">
+                            <label id="errUsername"></label>
+                        </td>
+                    <tr>
+                        <td>
+                            password: <input type="password" id="txtpswd">
+                            <label id="errpassword"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            number:
+                            <input type="number" name="enter number">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            date:
+                            <input type="date" id="Tdate" name="today date">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            file:
+                            <input type="file" id="flupload" name="choose file in you lap">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            email:
+                            <input type="email" id="EMAIL">
+                            <!-- <label id="Email"></label> -->
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            url:
+                            <input type="url" id="URL" name="site">
+                        </td>
+
+
+                    </tr>
+
+
+
+
+
+
+
+        </tr>
+    </table>
+    </td>
+
+    <td>
+        <table width="200px" id="kiran">
+            <tr>
+                <td>
+            <tr>
+                <td id="gender">
+                    GENDER: <br>
+                    <!-- <input type="radio" > -->
+                    <input type="radio" id="male" value="male">male <br>
+                    <input type="radio" id="female" value="female"> female
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    checkbox
+                    <input type="checkbox" id="chkbox">
+                    <label id="lblcheck"></label>
+                    <!-- <input type="checkbox" name="technologys" list="langauges">
+                                <datalist id="langauges" >
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="js"> JAVASCRIPT</option>
+                                </datalist> -->
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    dropdown:
+                    <select name="myddl" id="myddl">
+                        <optgroup label="cources">
+                            <option value="1">html</option>
+                            <option value="2">css</option>
+                            <option value="3">js</option>
+                        </optgroup>
+                        <optgroup label="designation">
+                            <option value="1">ba</option>
+                            <option value="2">tl</option>
+                            <option value="3">se</option>
+                        </optgroup>
+                    </select>
+
+
+                    dropdown:
+                    <select name="myddltest" id="myddltest">
+                        <option value="0">--select--</option>
+                        <option value="1">html</option>
+                        <option value="2">css</option>
+                        <option value="3">js</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <!-- <td>
+                            textarea:
+                             <textarea name="saikiran" id="" cols="2" rows="2"></textarea>
+                         </td> -->
+
+            </tr>
+            <tr>
+                <td>
+                    meter:
+                    <meter min="100" max="1000" value="100" low="100" max="1000">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    prpgress:
+                    <progress min="100" max="1000" value="100" low="100" max="4000"></progress>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    range:
+                    <input type="range" name="vol" min="0" max="50">
+                </td>
+
+            </tr>
+
+
+    </td>
+    </tr>
+    </table>
+    </td>
+    <tr>
+        <td>
+            <button onclick="return Validate()">validate</button>
+
+        </td>
+    </tr>
+    </tr>
+    </table>
+
+</body>
+
+</html>
